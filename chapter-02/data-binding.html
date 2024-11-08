@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Vue.js Pet Depot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.10/vue.js"></script>  </head>
+  <body>
+    <div id="app">
+      <header>	//#A
+        <h1 v-text="sitename"></h1>	//#B
+      </header>	//#A
+    </div>
+<script type="text/javascript">
+      var webstore = new Vue({
+        el: '#app', // <=== Don�t forget this comma!
+        data: {	//#C
+          sitename: 'Vue.js Pet Depot'	//#D
+        }	//#C
+      });
+    </script>
+  </body>
+</html>

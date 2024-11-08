@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Vue.js Pet Depot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.46/vue.global.dev.js"></script>  </head>
+  <body>
+    <div id="app">
+      <header>	//#A
+        <h1 v-text="sitename"></h1>	//#B
+      </header>	//#A
+    </div>
+<script type="text/javascript">
+    const app = Vue.createApp({
+      data() {
+        return {
+          sitename: 'Hello, Vue 3!'
+        }
+      }
+    });
+    </script>
+  </body>
+</html>
